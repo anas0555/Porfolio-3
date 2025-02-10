@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5b1c2;
+    font-family: 'poppins';
+    position: relative;
+    color: #fff;
+}
+
+.Profile-card{
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e272e;
+    border-radius: 10px;
+    box-shadow: 15px 35px 20px rgba(0, 0, 0, 0.05)
+    -10px -20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.Profile-content{
+    padding-inline: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Profile-picture{
+    width: 120px;
+    height: 120px;
+    background-color: #aaa;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #1DA1F2;
+}
+
+.Profile-picture img{
+    max-width: 100%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.Profile-picture img:hover{
+    transform: scale(1.08);
+}
+
+.Profile-name{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color:#1DA1F2 ;
+}
+
+.Profile-discription{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.social-accounts{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.social-accounts li{
+    display: inline-block;
+}
+
+.social-accounts a{
+    margin: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 15px;
+    color: var(--color);
+}
+
+.social-accounts a:hover{
+    background: var(--color);
+    color: #010101;
+    box-shadow: 0 0 5px var(--color),
+                0 0 25px var(--color),
+                0 0 50px var(--color),
+                0 0 75px var(--color),;
+}
+
+@media (max-width: 768px) {
+    .social-accounts a {
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-accounts a {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        margin: 5px;
+    }
+}
